@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D24_H_M_S.controller.DashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="802.0" prefWidth="288.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Brand%20Logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="95.0" layoutY="735.0" onAction="#loadLoginFormOnAction" prefHeight="23.0" prefWidth="102.0" style="-fx-background-color: #ff7979;" text="Log Out">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="27.0" layoutY="357.0" onAction="#loadStudentOnAction" prefHeight="53.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Manage Student">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="27.0" layoutY="173.0" onAction="#loadDashBoardUiOnAction" prefHeight="53.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Dashboard">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="27.0" layoutY="266.0" onAction="#loadRegisterOnAction" prefHeight="53.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Register">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="27.0" layoutY="445.0" onAction="#loadRoomOnAction" prefHeight="53.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Manage Room">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="27.0" layoutY="535.0" onAction="#loadEmployeeOnAction" prefHeight="53.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Manage Employee">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="27.0" layoutY="625.0" onAction="#loadReportOnAction" prefHeight="53.0" prefWidth="235.0" style="-fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="View Reservation">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dashBoardPane" layoutX="288.0" layoutY="43.0" prefHeight="760.0" prefWidth="915.0">
+         <children>
+            <JFXButton fx:id="txtId1" layoutX="80.0" layoutY="155.0" prefHeight="100.0" prefWidth="140.0" style="-fx-background-color: #7f8c8d;" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="txtId2" layoutX="265.0" layoutY="155.0" prefHeight="100.0" prefWidth="140.0" style="-fx-background-color: #7f8c8d;" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="txtId3" layoutX="447.0" layoutY="155.0" prefHeight="100.0" prefWidth="140.0" style="-fx-background-color: #7f8c8d;" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="txtId4" layoutX="627.0" layoutY="155.0" prefHeight="100.0" prefWidth="140.0" style="-fx-background-color: #7f8c8d;" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="286.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Room Count">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="115.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RM - 1324" />
+            <Text layoutX="300.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RM - 5467" />
+            <Text layoutX="482.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RM - 7896" />
+            <Text layoutX="662.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RM - 1324" />
+            <JFXButton fx:id="txtStudents" layoutX="160.0" layoutY="452.0" prefHeight="110.0" prefWidth="160.0" style="-fx-background-color: #7f8c8d;" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="txtEmployees" layoutX="533.0" layoutY="452.0" prefHeight="110.0" prefWidth="160.0" style="-fx-background-color: #7f8c8d;" text="20">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="162.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Student Count">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="530.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Employee Count">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Text layoutX="338.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" />
+      <Text layoutX="910.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" />
+      <JFXButton layoutX="1100.0" layoutY="20.0" onAction="#openSettingPageOnAction" style="-fx-background-color: #7f8c8d;" text="Settings" />
+      <Text fx:id="txtTime" layoutX="960.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="txtDate" layoutX="400.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
