@@ -3,16 +3,19 @@ package lk.ijse.D24_H_M_S.controller;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class RoomFormController {
     public JFXTextField txtId;
     public JFXTextField txtName;
     public JFXTextField txtMoney;
     public JFXTextField txtQty;
+    public TableView tblRoom;
     public TableColumn clmId;
     public TableColumn clmType;
     public TableColumn clmMoney;
     public TableColumn clmQty;
+
 
     public void slipToType(ActionEvent actionEvent) {
     }

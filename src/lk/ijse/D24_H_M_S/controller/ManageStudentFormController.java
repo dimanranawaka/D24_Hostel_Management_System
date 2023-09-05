@@ -4,12 +4,14 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class ManageStudentFormController {
     public JFXTextField txtId;
     public JFXTextField txtName;
     public JFXTextField txtAddress;
     public JFXTextField txtContact;
+    public TableView tblStudent;
     public TableColumn clmId;
     public TableColumn clmName;
     public TableColumn clmAddress;
@@ -18,6 +20,7 @@ public class ManageStudentFormController {
     public TableColumn clmGender;
     public JFXTextField txtDOB;
     public JFXComboBox cmbGender;
+
 
     public void slipToName(ActionEvent actionEvent) {
     }

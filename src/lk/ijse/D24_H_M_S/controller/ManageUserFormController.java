@@ -4,18 +4,21 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class ManageUserFormController {
     public JFXTextField txtId;
     public JFXTextField txtName;
     public JFXTextField txtAddress;
     public JFXTextField showPW;
+    public TableView tblUser;
     public TableColumn clmId;
     public TableColumn clmName;
     public TableColumn clmEmail;
     public TableColumn clmRole;
     public JFXTextField showCMPW;
     public JFXComboBox cmbRole;
+
 
     public void slipToName(ActionEvent actionEvent) {
     }
