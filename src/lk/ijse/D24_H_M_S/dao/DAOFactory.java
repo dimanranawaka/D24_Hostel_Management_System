@@ -9,6 +9,9 @@ public class DAOFactory {
         return (daoFactory == null) ? daoFactory = new DAOFactory() : daoFactory;
     }
 
+    public enum Types{
+        ROOM,RESERVATION,STUDENT,EMPLOYEE,USER,LOGIN,FORGET,UNPAID
 
+    }
 
 }

@@ -22,5 +22,6 @@ public class LoginFormController {
     }
 
     public void loadDashBoardOnAction(ActionEvent actionEvent) {
+
     }
 }
