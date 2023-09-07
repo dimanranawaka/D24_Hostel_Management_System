@@ -29,6 +29,7 @@ public class Student {
     @OneToMany(mappedBy = "student" ,fetch = FetchType.EAGER)
     private List<Reservation> studentDetails = new ArrayList<>();
 
+    // For Validation and Custom Logic
     public Student(String sId, String name, String address, String contactNo, LocalDate dob, String gender) {
         this.sId = sId;
         this.name = name;

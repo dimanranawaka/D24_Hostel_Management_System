@@ -25,6 +25,7 @@ public class Room {
     @OneToMany(mappedBy = "room" , fetch = FetchType.EAGER)
     private List <Room> roomDetails = new ArrayList<>();
 
+    // For Validation and Custom Logic
     public Room(String rId, String type, String keMoney, int qty) {
         this.rId = rId;
         this.type = type;
