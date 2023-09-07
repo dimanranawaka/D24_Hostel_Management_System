@@ -25,13 +25,41 @@ public class LoginFormController {
     public JFXPasswordField txtPassword;
     public JFXTextField txtShowPW;
 
-    public void slipToPassword(ActionEvent actionEvent) {
+    public void initialize(){
+
+        txtShowPW.setVisible(false);
+
     }
 
-    public void loadForgetOnAction(ActionEvent actionEvent) {
+    public void slipToPassword(ActionEvent actionEvent) {
+
+        txtPassword.requestFocus();
+
+    }
+
+    public void loadForgetOnAction(ActionEvent actionEvent) throws IOException {
+
+        Navigator.navigate(Routes.FORGET,pane);
+
     }
 
     public void showOnAction(ActionEvent actionEvent) {
+
+        if (cbxShowPw.isSelected()){
+
+            txtShowPW.setVisible(true);
+            txtShowPW.setText(txtPassword.getText());
+            txtPassword.setVisible(false);
+
+        }
+        else {
+
+            txtPassword.setVisible(true);
+            txtPassword.setText(txtShowPW.getText());
+            txtShowPW.setVisible(false);
+
+        }
+
     }
 
     public void loadDashBoardOnAction(ActionEvent actionEvent) {
@@ -65,5 +93,8 @@ public class LoginFormController {
     }
 
     public void slipToButton(ActionEvent actionEvent) {
+
+        btnRegister.requestFocus();
+
     }
 }
