@@ -23,7 +23,7 @@ public class Room {
     private int qty;
 
     @OneToMany(mappedBy = "room" , fetch = FetchType.EAGER)
-    private List <Room> roomDetails = new ArrayList<>();
+    private List <Reservation> roomDetails = new ArrayList<>();
 
     // For Validation and Custom Logic
     public Room(String rId, String type, String keMoney, int qty) {
