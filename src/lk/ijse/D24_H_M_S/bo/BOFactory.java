@@ -1,5 +1,7 @@
 package lk.ijse.D24_H_M_S.bo;
 
+import lk.ijse.D24_H_M_S.bo.custom.impl.LoginBOImpl;
+
 public class BOFactory {
     private static BOFactory boFactory;
 
@@ -13,8 +15,10 @@ public class BOFactory {
     }
     public SuperBO getBO(Types types){
         switch (types){
-            case EMPLOYEE:
-
+            case LOGIN:
+                return new LoginBOImpl();
+            default:
+                return null;
         }
     }
 }
