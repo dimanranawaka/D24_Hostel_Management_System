@@ -1,6 +1,7 @@
 package lk.ijse.D24_H_M_S.dao;
 
-import lk.ijse.D24_H_M_S.dao.custom.LoginDAOImpl;
+import lk.ijse.D24_H_M_S.dao.custom.impl.LoginDAOImpl;
+import lk.ijse.D24_H_M_S.dao.custom.impl.RoomDAOImpl;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
@@ -19,6 +20,8 @@ public class DAOFactory {
         switch (types){
             case LOGIN:
                 return new LoginDAOImpl();
+            case ROOM:
+                return new RoomDAOImpl();
             default:
                 return null;
         }

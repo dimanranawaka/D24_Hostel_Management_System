@@ -1,5 +1,6 @@
-package lk.ijse.D24_H_M_S.dao.custom;
+package lk.ijse.D24_H_M_S.dao.custom.impl;
 
+import lk.ijse.D24_H_M_S.dao.custom.LoginDAO;
 import lk.ijse.D24_H_M_S.entity.User;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
