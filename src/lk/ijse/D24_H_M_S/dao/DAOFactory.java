@@ -31,9 +31,12 @@ public class DAOFactory {
                 return new LoginDAOImpl();
             case FORGET:
                 return new ForgetPasswordDAOImpl();
+            case UNPAID:
+                return new QueryDAOImpl();
             default:
                 return null;
         }
+
     }
 
 }

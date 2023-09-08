@@ -31,6 +31,8 @@ public class BOFactory {
                 return new LoginBOImpl();
             case FORGET:
                 return new ForgetPasswordBOImpl();
+            case UNPAID:
+                return new UnpaidStudentBOImpl();
             case DASHBOARD:
                 return new DashBoardBOImpl();
             default:
