@@ -1,6 +1,6 @@
 package lk.ijse.D24_H_M_S.bo;
 
-import lk.ijse.D24_H_M_S.bo.custom.ForgetPasswordBOImpl;
+import lk.ijse.D24_H_M_S.bo.custom.impl.ForgetPasswordBOImpl;
 import lk.ijse.D24_H_M_S.bo.custom.impl.*;
 
 public class BOFactory {
@@ -21,6 +21,8 @@ public class BOFactory {
                 return new StudentBOImpl();
             case ROOM:
                 return new RoomBOImpl();
+            case RESERVATION:
+                return new ReservationBOImpl();
             case EMPLOYEE:
                 return new EmployeeBOImpl();
             case USER:

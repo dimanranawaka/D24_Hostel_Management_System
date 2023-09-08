@@ -1,5 +1,6 @@
-package lk.ijse.D24_H_M_S.bo.custom;
+package lk.ijse.D24_H_M_S.bo.custom.impl;
 
+import lk.ijse.D24_H_M_S.bo.custom.ForgetPasswordBO;
 import lk.ijse.D24_H_M_S.dao.DAOFactory;
 import lk.ijse.D24_H_M_S.dao.custom.ForgetPasswordDAO;
 import lk.ijse.D24_H_M_S.util.FactoryConfiguration;
