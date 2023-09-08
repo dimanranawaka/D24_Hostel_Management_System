@@ -2,6 +2,7 @@ package lk.ijse.D24_H_M_S.dao;
 
 import lk.ijse.D24_H_M_S.dao.custom.impl.LoginDAOImpl;
 import lk.ijse.D24_H_M_S.dao.custom.impl.RoomDAOImpl;
+import lk.ijse.D24_H_M_S.dao.custom.impl.StudentDAOImpl;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
@@ -18,10 +19,12 @@ public class DAOFactory {
     }
     public SuperDAO getDAO(Types types){
         switch (types){
-            case LOGIN:
-                return new LoginDAOImpl();
             case ROOM:
                 return new RoomDAOImpl();
+            case STUDENT:
+                return new StudentDAOImpl();
+            case LOGIN:
+                return new LoginDAOImpl();
             default:
                 return null;
         }
