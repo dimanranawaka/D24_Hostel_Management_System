@@ -27,6 +27,8 @@ public class DAOFactory {
                 return new UserDAOImpl();
             case LOGIN:
                 return new LoginDAOImpl();
+            case FORGET:
+                return new ForgetPasswordDAOImpl();
             default:
                 return null;
         }
