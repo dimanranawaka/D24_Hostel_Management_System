@@ -1,9 +1,6 @@
 package lk.ijse.D24_H_M_S.bo;
 
-import lk.ijse.D24_H_M_S.bo.custom.impl.EmployeeBOImpl;
-import lk.ijse.D24_H_M_S.bo.custom.impl.LoginBOImpl;
-import lk.ijse.D24_H_M_S.bo.custom.impl.RoomBOImpl;
-import lk.ijse.D24_H_M_S.bo.custom.impl.StudentBOImpl;
+import lk.ijse.D24_H_M_S.bo.custom.impl.*;
 
 public class BOFactory {
     private static BOFactory boFactory;
@@ -25,6 +22,8 @@ public class BOFactory {
                 return new RoomBOImpl();
             case EMPLOYEE:
                 return new EmployeeBOImpl();
+            case USER:
+                return new UserBOImpl();
             case LOGIN:
                 return new LoginBOImpl();
             default:
