@@ -1,5 +1,6 @@
 package lk.ijse.D24_H_M_S.bo;
 
+import lk.ijse.D24_H_M_S.bo.custom.ForgetPasswordBOImpl;
 import lk.ijse.D24_H_M_S.bo.custom.impl.*;
 
 public class BOFactory {
@@ -26,6 +27,8 @@ public class BOFactory {
                 return new UserBOImpl();
             case LOGIN:
                 return new LoginBOImpl();
+            case FORGET:
+                return new ForgetPasswordBOImpl();
             case DASHBOARD:
                 return new DashBoardBOImpl();
             default:
