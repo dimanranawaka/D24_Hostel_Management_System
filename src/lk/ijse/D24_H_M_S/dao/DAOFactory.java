@@ -1,9 +1,6 @@
 package lk.ijse.D24_H_M_S.dao;
 
-import lk.ijse.D24_H_M_S.dao.custom.impl.EmployeeDAOImpl;
-import lk.ijse.D24_H_M_S.dao.custom.impl.LoginDAOImpl;
-import lk.ijse.D24_H_M_S.dao.custom.impl.RoomDAOImpl;
-import lk.ijse.D24_H_M_S.dao.custom.impl.StudentDAOImpl;
+import lk.ijse.D24_H_M_S.dao.custom.impl.*;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;
@@ -26,6 +23,8 @@ public class DAOFactory {
                 return new StudentDAOImpl();
             case EMPLOYEE:
                 return new EmployeeDAOImpl();
+            case USER:
+                return new UserDAOImpl();
             case LOGIN:
                 return new LoginDAOImpl();
             default:
