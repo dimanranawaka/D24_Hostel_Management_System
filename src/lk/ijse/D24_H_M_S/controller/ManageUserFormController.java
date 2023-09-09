@@ -100,7 +100,7 @@ public class ManageUserFormController {
 
         if (txtPassword.getText().equals(txtCMPassword.getText())){
 
-            boolean add = userBO.addUser(new UserDTO(txtId.getId(), txtName.getText(),
+            boolean add = userBO.addUser(new UserDTO(txtId.getText(), txtName.getText(),
                     txtEmail.getText(), txtPassword.getText(), (String) cmbRole.getValue()));
 
             if (add){
@@ -245,7 +245,7 @@ public class ManageUserFormController {
         clmId.setCellValueFactory(new PropertyValueFactory("uId"));
         clmName.setCellValueFactory(new PropertyValueFactory("name"));
         clmEmail.setCellValueFactory(new PropertyValueFactory("email"));
-        cmbRole.setCellFactory(new PropertyValueFactory("role"));
+        clmRole.setCellFactory(new PropertyValueFactory("role"));
 
     }
 
