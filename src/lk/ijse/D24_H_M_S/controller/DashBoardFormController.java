@@ -174,7 +174,7 @@ public class DashBoardFormController {
     }
 
     public void loadReportOnAction(ActionEvent actionEvent) throws IOException {
-        setUi("/lk/ijse/D24_H_M_S/view/ReceptionForm.fxml");
+        setUi("/lk/ijse/D24_H_M_S/view/ReservationForm.fxml");
     }
 
     public void openSettingPageOnAction(ActionEvent actionEvent) throws IOException {
