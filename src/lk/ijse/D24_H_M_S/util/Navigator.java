@@ -17,19 +17,27 @@ public class Navigator {
         switch (routes){
             case LOGIN:
                 stage.setTitle("Login Form");
-                iniUI("LoginForm.fxml");
+//                iniUI("LoginForm.fxml");
+                Navigator.pane.getChildren().add(FXMLLoader.load(Navigator.class.getResource("../view/LoginForm.fxml")));
                 break;
             case FORGET:
                 stage.setTitle("Forget Password");
-                iniUI("ForgetPasswordForm.fxml");
+//                iniUI("ForgetPasswordForm.fxml");
+                Navigator.pane.getChildren().add(FXMLLoader.load(Navigator.class.getResource("../view/ForgetPasswordForm.fxml")));
                 break;
             case DASHBOARD:
+                stage.setTitle("DashBoard Form");
+//                iniUI("DashBoardForm.fxml");
+                Navigator.pane.getChildren().add(FXMLLoader.load(Navigator.class.getResource("../view/DashBoardForm.fxml")));
+                break;
+            case RECEPTION:
                 stage.setTitle("Reception Form");
-                iniUI("ReceptionForm.fxml");
+//                iniUI("ReceptionForm.fxml");
+                Navigator.pane.getChildren().add(FXMLLoader.load(Navigator.class.getResource("../view/ReceptionForm.fxml")));
                 break;
         }
     }
     private static void iniUI(String location) throws IOException {
-        Navigator.pane.getChildren().add(FXMLLoader.load(Navigator.class.getResource("lk/ijse/D24_H_M_S/view/" + location)));
+        Navigator.pane.getChildren().add(FXMLLoader.load(Navigator.class.getResource("lk/ijse/D24_H_M_S/view/"+location)));
     }
 }

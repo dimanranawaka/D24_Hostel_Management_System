@@ -51,6 +51,7 @@ public class ManageUserFormController {
 
         getAllUser();
         setCellValue();
+        loadRole();
         showPW.setVisible(false);
         showCMPW.setVisible(false);
 

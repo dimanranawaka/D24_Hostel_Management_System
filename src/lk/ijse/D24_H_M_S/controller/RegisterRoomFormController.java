@@ -58,7 +58,7 @@ public class RegisterRoomFormController {
         cmbGender.setItems(gender);
 
         ObservableList<String> status = FXCollections.observableArrayList();
-        gender.addAll("Paid","Not Paid");
+        status.addAll("Paid","Not Paid");
         cmbStatus.setItems(status);
 
     }
