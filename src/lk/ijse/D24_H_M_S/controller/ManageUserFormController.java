@@ -292,7 +292,7 @@ public class ManageUserFormController {
         userIdMatcher = userIdPattern.matcher(txtId.getText());
 
         Pattern userNamePattern = Pattern.compile("^[a-zA-Z0-9]{4,}$");
-        userNameMatcher = userIdPattern.matcher(txtName.getText());
+        userNameMatcher = userNamePattern.matcher(txtName.getText());
 
         Pattern emailPattern = Pattern.compile("^([a-z0-9]{2,})([@])([a-z]{2,9})([.])([a-z]{2,})$");
         emailMatcher = emailPattern.matcher(txtEmail.getText());
