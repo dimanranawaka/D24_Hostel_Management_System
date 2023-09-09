@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -73,5 +74,6 @@
             <Font size="20.0" />
          </font>
       </Text>
+      <Label fx:id="txtResId" layoutX="1007.0" layoutY="141.0" />
    </children>
 </AnchorPane>
