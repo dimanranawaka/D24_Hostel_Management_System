@@ -50,7 +50,7 @@ public class ReservationBOImpl implements ReservationBO {
 
         // Set the session for the roomDAO and retrieve the corresponding room.
         roomDAO.setSession(session);
-        Room room = roomDAO.get(dto.getResId());
+        Room room = roomDAO.get(dto.getRId());
         room.setQty(room.getQty() - 1);
 
         // Create a new Reservation object and set its attributes.
