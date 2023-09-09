@@ -23,5 +23,6 @@
     <orderEntry type="library" name="mysql-connector-j-8.1.0" level="project" />
     <orderEntry type="library" name="javax.activation-api-1.2.0" level="project" />
     <orderEntry type="library" name="lombok" level="project" />
+    <orderEntry type="library" name="jasperreports-6.8.0" level="project" />
   </component>
 </module>

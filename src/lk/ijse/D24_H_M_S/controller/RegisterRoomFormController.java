@@ -17,8 +17,12 @@ import lk.ijse.D24_H_M_S.bo.BOFactory;
 import lk.ijse.D24_H_M_S.bo.custom.ReservationBO;
 import lk.ijse.D24_H_M_S.dto.CustomDTO;
 import lk.ijse.D24_H_M_S.view.tdm.RoomTDM;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.view.JasperViewer;
 
+import java.io.InputStream;
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -155,6 +159,8 @@ public class RegisterRoomFormController {
             if (added){
 
                 new Alert(Alert.AlertType.CONFIRMATION,"Room Registered!").show();
+                printBill();
+                clearText();
 
             }else {
 
@@ -215,5 +221,36 @@ public class RegisterRoomFormController {
         Pattern userAddress = Pattern.compile("^[a-zA-Z0-9]{3,}$");
         address = userAddress.matcher(txtAddress.getText());
     }
+    private void clearText(){
 
+        txtSID.clear();
+        txtAddress.clear();
+        txtSName.clear();
+        txtContact.clear();
+
+    }
+
+    private void printBill(){
+
+        HashMap bill = new HashMap();
+
+        bill.put("roomId",String.valueOf(cmbRid.getValue()));
+        bill.put("studentName",txtSName.getText());
+        bill.put("paid",String.valueOf(cmbStatus.getValue()));
+
+        try {
+
+            InputStream resource = this.getClass().getResourceAsStream("lk/ijse/D24_H_M_S/view/bill/Blank_A4_1.jrxml");
+            JasperReport jasperReport = JasperCompileManager.compileReport(resource);
+
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, bill, new JREmptyDataSource(1));
+
+            JasperViewer.viewReport(jasperPrint,false);
+
+        } catch (Exception e) {
+
+            System.out.println(e);
+
+        }
+    }
 }
