@@ -21,11 +21,13 @@ public class ReservationDAOImpl implements ReservationDAO {
     // Returns true if the reservation is successfully saved; otherwise, returns false.
     @Override
     public boolean register(Reservation reservation){
-        if (reservation != null){
+        /*if (reservation != null){
             session.save(reservation);
             return true;
         }
-        return false;
+        return false;*/
+        session.save(reservation);
+        return true;
     }
 
     // Generates the next reservation ID.

@@ -150,7 +150,7 @@ public class RegisterRoomFormController {
         cmbStatus.requestFocus();
     }
 
-    public void registerOnAction(ActionEvent actionEvent) {
+    public void registerOnAction(ActionEvent actionEvent) throws NullPointerException{
 
         try {
             LocalDate date = LocalDate.now();
@@ -159,7 +159,7 @@ public class RegisterRoomFormController {
             if (added){
 
                 new Alert(Alert.AlertType.CONFIRMATION,"Room Registered!").show();
-                printBill();
+//                printBill();
                 clearText();
 
             }else {
@@ -168,6 +168,7 @@ public class RegisterRoomFormController {
             }
         }catch (Exception e){
             System.out.println(e);
+            e.printStackTrace();
         }
     }
 
